@@ -5,14 +5,14 @@ Add `CustomerMSP` to channel `mychannel` and ensure peers are discoverable.
 
 ## Run Customer Add Flow
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain/addCustomer
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain/addCustomer
 ./addCustomer.sh
 ```
 
 ## Validate Membership
 From project root:
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain
 export $(./setOrgEnv.sh Manufacturer | xargs)
 peer channel fetch config /tmp/config_block.pb -o localhost:7050 -c mychannel --tls --cafile organizations/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
 ```

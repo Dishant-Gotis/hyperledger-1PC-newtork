@@ -80,14 +80,14 @@ This caused:
 
 ### 0. Prepare env file (required)
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain/explorer
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain/explorer
 cp .env.example .env
 # edit .env with local values if needed
 ```
 
 ### 1. Start/restart Explorer stack
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain/explorer
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain/explorer
 docker compose down -v
 docker compose up -d
 ```
@@ -110,13 +110,13 @@ docker exec -it explorerdb.mynetwork.com psql -U hppoc -d fabricexplorer -c "sel
 
 ### 4. Create a test transaction
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain
 ./network.sh cc invoke -org 1 -c mychannel -ccn carcc -ccic '{"Args":["CreateCar","CAR901","Honda","City","White","45000"]}'
 ```
 
 ### 5. Re-check counters
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain/explorer
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain/explorer
 docker exec -it explorerdb.mynetwork.com psql -U hppoc -d fabricexplorer -c "select count(*) as blocks from blocks;"
 docker exec -it explorerdb.mynetwork.com psql -U hppoc -d fabricexplorer -c "select count(*) as txs from transactions;"
 ```
@@ -126,7 +126,7 @@ Success criterion:
 
 ### 6. Chaincode data validation
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain
 ./network.sh cc query -org 2 -c mychannel -ccn carcc -ccqc '{"Args":["ReadCar","CAR901"]}'
 ```
 
@@ -147,7 +147,7 @@ Before commit/push:
 
 0. Verify env policy:
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain
 git check-ignore -v explorer/.env
 ```
 
@@ -157,7 +157,7 @@ Expected:
 
 1. Run secret scan:
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain
 rg -n -i "password|passwd|adminpw|secret|private key|BEGIN .*PRIVATE KEY|apikey|token|jwt|bearer" .
 ```
 

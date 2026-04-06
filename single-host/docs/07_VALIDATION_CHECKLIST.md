@@ -19,7 +19,7 @@ Use this checklist after setup and after any major change.
 ## DB Health
 Run:
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain/explorer
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain/explorer
 docker exec -it explorerdb.mynetwork.com psql -U hppoc -d fabricexplorer -c "select count(*) as blocks from blocks;"
 docker exec -it explorerdb.mynetwork.com psql -U hppoc -d fabricexplorer -c "select count(*) as txs from transactions;"
 ```

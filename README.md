@@ -20,13 +20,13 @@ If you are running the entire network on one machine:
 ### Path B: Distributed 5-PC Setup (Phase 2)
 If you are moving to the multi-node ZeroTier deployment:
 1. Navigate to the `multi-host` directory: `cd multi-host`
-2. Follow the detailed migration runbooks at the workspace level: [/home/raj/HyperledgerFabric/plan/phase2/README.md](/home/raj/HyperledgerFabric/plan/phase2/README.md)
+2. Follow the detailed migration runbooks at the workspace level: [/home/dishant/HyperledgerFabric/plan/phase2/README.md](/home/dishant/HyperledgerFabric/plan/phase2/README.md)
 3. Ensure you've run the `check_prerequisites.sh` tool in the workspace plan folder.
 
 ---
 
 ## Workspace Contextual Notes
-Workspace-wide task notes and migration plans are maintained outside this Git project at [/home/raj/HyperledgerFabric/plan/](/home/raj/HyperledgerFabric/plan/).
+Workspace-wide task notes and migration plans are maintained outside this Git project at [/home/dishant/HyperledgerFabric/plan/](/home/dishant/HyperledgerFabric/plan/).
 
 
 # Running the test network

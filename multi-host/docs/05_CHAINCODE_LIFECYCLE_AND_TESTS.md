@@ -5,7 +5,7 @@ Ensure `carcc` is available on channel `mychannel`, then validate invoke/query f
 
 ## List Installed/Committed Chaincode
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain
 ./network.sh cc list -org 1
 ```
 

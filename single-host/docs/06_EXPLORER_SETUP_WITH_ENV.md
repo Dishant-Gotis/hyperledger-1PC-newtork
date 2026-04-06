@@ -12,7 +12,7 @@ Run Hyperledger Explorer without hardcoding credentials in tracked files.
 
 ## Prepare Env
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain/explorer
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain/explorer
 cp -n .env.example .env
 ```
 

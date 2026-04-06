@@ -2,7 +2,7 @@
 
 ## Start Fabric Network
 ```bash
-cd /home/raj/HyperledgerFabric/Car-Supply-Chain
+cd /home/dishant/HyperledgerFabric/Car-Supply-Chain
 ./network.sh up createChannel -ca -c mychannel
 ```
 

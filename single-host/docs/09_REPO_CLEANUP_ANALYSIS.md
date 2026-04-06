@@ -29,8 +29,8 @@ Produce a practical cleanup plan without breaking network scripts or expected pa
 - `CHAINCODE_AS_A_SERVICE_TUTORIAL.md` -> `docs/CHAINCODE_AS_A_SERVICE_TUTORIAL.md` (update references)
 
 ### Move Outside Project (workspace-level notes)
-- `docs/TODO_WORKSPACE.md` -> `/home/raj/HyperledgerFabric/workspace-notes/TODO_WORKSPACE.md`
-- `docs/NEXT_STEPS_TODO.md` -> `/home/raj/HyperledgerFabric/workspace-notes/NEXT_STEPS_TODO.md`
+- `docs/TODO_WORKSPACE.md` -> `/home/dishant/HyperledgerFabric/workspace-notes/TODO_WORKSPACE.md`
+- `docs/NEXT_STEPS_TODO.md` -> `/home/dishant/HyperledgerFabric/workspace-notes/NEXT_STEPS_TODO.md`
 
 ### Archive / Remove / Ignore
 - `log.txt` (treat as runtime log; do not keep in root)
