@@ -1,0 +1,66 @@
+# --- Hyperledger Fabric Binaries and Config ---
+**/bin/
+**/config/
+**/builders/
+
+# --- Generated Runtime Artifacts ---
+# These are environment-specific and should never be committed
+**/channel-artifacts/
+**/system-genesis-block/*.block
+**/*.block
+**/*.json
+**/*.pb
+**/*.tx
+**/log.txt
+**/*.log
+**/*.tar.gz
+**/*.gz
+
+# Keep system genesis directory structure for channel bootstrap
+!**/system-genesis-block/.gitkeep
+
+# --- Cryptographic Materials (Security Sensitive) ---
+# Never commit private keys, MSP certs, or TLS artifacts
+**/organizations/peerOrganizations/
+**/organizations/ordererOrganizations/
+
+# Handle Fabric CA generated data carefully
+**/organizations/fabric-ca/*/msp/
+**/organizations/fabric-ca/*/tls-cert.pem
+**/organizations/fabric-ca/*/ca-cert.pem
+**/organizations/fabric-ca/*/Issuer*
+**/organizations/fabric-ca/*/*.db
+**/organizations/fabric-ca/*/tls/
+
+# Exception: keep CA configuration templates and scripts
+!**/organizations/fabric-ca/registerEnroll.sh
+!**/organizations/fabric-ca/ordererOrg/fabric-ca-server-config.yaml
+!**/organizations/fabric-ca/manufacturer/fabric-ca-server-config.yaml
+!**/organizations/fabric-ca/showroom/fabric-ca-server-config.yaml
+!**/addCustomer/fabric-ca/customer/fabric-ca-server-config.yaml
+
+# Never commit private key material (fail-safe)
+**/keystore/*
+**/*_sk
+
+# --- Service-Specific Data ---
+
+# Hyperledger Explorer
+**/explorer/.env
+**/explorer/.env.*
+!**/explorer/.env.example
+**/explorer/wallet/
+**/explorer/data/
+
+# Monitoring (Prometheus/Grafana)
+**/prometheus-grafana/grafana_db/*.db
+**/prometheus-grafana/prometheus/data/
+
+# --- Standard Development Artifacts ---
+node_modules/
+**/vendor/
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.bak
